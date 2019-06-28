@@ -35,7 +35,7 @@ client = PahoMqtt::Client.new(
 
 client.connect
 
-pattern = 6
+pattern = 1
 
 FLOWERS.each do |flower|
   client.publish("garden/#{flower}/display/pattern/set", pattern)
