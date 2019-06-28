@@ -7,7 +7,7 @@ YetiLogger.configure do |config|
 end
 
 client = PahoMqtt::Client.new(
-    host: '192.168.7.200',
+    host: '192.168.0.200',
     port: 1883,
     persistent: true,
     reconnect_limit: -1,
